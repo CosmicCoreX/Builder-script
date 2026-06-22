@@ -1,5 +1,5 @@
 ```
-cd acsp && crave run --no-patch -- "curl https://raw.githubusercontent.com/CosmicCoreX/Builder-script/refs/heads/main/build.sh | bash"
+cd ascp && crave run --no-patch -- "curl https://raw.githubusercontent.com/CosmicCoreX/Builder-script/refs/heads/main/build.sh | bash"
 ```
 
 >**Special Thanks**
