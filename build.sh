@@ -53,7 +53,7 @@ function clean() {
 }
 
 function sync_sources() {
-  repo init -u repo init -u https://github.com/vos-ascp/pos_manifest.git -b sixteen-qpr2 --git-lfs --depth=1
+  repo init -u https://github.com/ascp-oss/manifest.git -b sixteen-qpr2 --git-lfs --depth=1
   git clone https://github.com/CosmicCoreX/Builder-script.git -b main .repo/local_manifests
 
   if [ -f /opt/crave/resync.sh ]; then
