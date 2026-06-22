@@ -9,10 +9,10 @@
     <remote name="CosmicCoreX" fetch="https://github.com/CosmicCoreX" revision="lineage-23.2" />
 
     <!-- Device -->
-    <project remote="CosmicCoreX" name="device_xiaomi_violet" path="device/xiaomi/violet" />
+    <project remote="CosmicCoreX" name="device_xiaomi_violet" path="device/xiaomi/violet" revision="lineage-23.2" />
 
     <!-- Kernel -->
-    <project remote="joker" name="kernel_xiaomi_violet" path="kernel/xiaomi/violet" revision="sixteen" />
+    <project remote="ax-devices" name="android_kernel_xiaomi_violet" path="kernel/xiaomi/violet" />
 
     <!-- Vendor -->
     <project remote="ax-devices" name="android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" />
