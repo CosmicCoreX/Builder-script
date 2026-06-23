@@ -31,7 +31,7 @@ set +o allexport
 
 ### ================= CONFIG =================
 
-ROM_NAME="Ascp"
+ROM_NAME="EvoX"
 DEVICE="violet"
 BUILD_TYPE="user"
 USER="@IamZeus14"
@@ -40,7 +40,7 @@ COMMON_IMAGES=("recovery.img")
 OUT_DIR="out/target/product/${DEVICE}"
 LOG="build.log"
 OTA_JSON_FILE="${OUT_DIR}/GMS/${DEVICE}.json"
-ROM_ZIP="${OUT_DIR}/evox*.zip"
+ROM_ZIP="${OUT_DIR}/Evol*.zip"
 
 ### ============================================== ###
 
@@ -70,13 +70,13 @@ function setup_env() {
   export BUILD_HOSTNAME=crave
 
   . build/envsetup.sh
-  axion "$DEVICE" "$BUILD_TYPE" gms
+  lunch lineage_"$DEVICE"-bp4a-"$BUILD_TYPE"
   mka installclean
 }
 
 function build_rom() {
   touch "$LOG"
-  ax -b 2>&1 | tee "$LOG" &
+  m evolution 2>&1 | tee "$LOG" &
   BUILD_PID=$!
 
   wait "$BUILD_PID"
