@@ -31,7 +31,7 @@ set +o allexport
 
 ### ================= CONFIG =================
 
-ROM_NAME="EvoX"
+ROM_NAME="Lunaris"
 DEVICE="violet"
 BUILD_TYPE="user"
 USER="@IamZeus14"
@@ -40,7 +40,7 @@ COMMON_IMAGES=("recovery.img")
 OUT_DIR="out/target/product/${DEVICE}"
 LOG="build.log"
 OTA_JSON_FILE="${OUT_DIR}/GMS/${DEVICE}.json"
-ROM_ZIP="${OUT_DIR}/Evol*.zip"
+ROM_ZIP="${OUT_DIR}/Lunaris*.zip"
 
 ### ============================================== ###
 
@@ -54,7 +54,7 @@ function clean() {
 }
 
 function sync_sources() {
-  repo init -u https://github.com/Evolution-X/manifest -b bka --git-lfs --depth=1
+  repo init -u https://github.com/Lunaris-AOSP/android -b 16.2 --git-lfs --depth=1
   git clone https://github.com/CosmicCoreX/Builder-script.git -b main .repo/local_manifests
 
   if [ -f /opt/crave/resync.sh ]; then
