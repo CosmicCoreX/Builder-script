@@ -77,7 +77,7 @@ function setup_env() {
 
 function build_rom() {
   touch "$LOG"
-  m evolution 2>&1 | tee "$LOG" &
+  m bacon 2>&1 | tee "$LOG" &
   BUILD_PID=$!
 
   wait "$BUILD_PID"
