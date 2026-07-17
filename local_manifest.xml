@@ -15,7 +15,7 @@
     <project remote="selfmusing" name="android_kernel_xiaomi_violet" path="kernel/xiaomi/violet" revision="sixteen" />
 
     <!-- Vendor -->
-    <project remote="joker" name="vendor_xiaomi_violet" path="vendor/xiaomi/violet" />
+    <project remote="joker" name="vendor_xiaomi_violet" path="vendor/xiaomi/violet" revision="16.2" />
 
     <!-- Hardware -->
     <project remote="lineage" name="android_hardware_xiaomi" path="hardware/xiaomi" />
