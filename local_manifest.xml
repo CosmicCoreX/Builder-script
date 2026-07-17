@@ -14,7 +14,7 @@
     <project remote="CosmicCoreX" name="cosmic_kernel_violet" path="kernel/xiaomi/violet" revision="sixteen" />
 
     <!-- Vendor -->
-    <project remote="CosmicCoreX" name="vendor_xiaomi_violet" path="vendor/xiaomi/violet" revision="16" />
+    <project remote="joker" name="vendor_xiaomi_violet" path="vendor/xiaomi/violet" revision="16.2" />
 
     <!-- Hardware -->
     <project remote="lineage" name="android_hardware_xiaomi" path="hardware/xiaomi" />
