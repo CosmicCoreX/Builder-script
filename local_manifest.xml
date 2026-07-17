@@ -3,19 +3,19 @@
 <!-- Device : Redmi Note 7 Pro (violet) -->
 <manifest>
     <!-- fetching sources -->
-    <remote name="ax-devices" fetch="https://github.com/AxionAOSP-devices" revision="lineage-23.2" />
+    <remote name="selfmusin" fetch="https://github.com/selfmusing" revision="lineage-23.2" />
     <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-23.2" />
     <remote name="joker" fetch="https://github.com/Joker-V2" revision="lineage-23.2" />
     <remote name="CosmicCoreX" fetch="https://github.com/CosmicCoreX" revision="lineage-23.2" />
 
     <!-- Device -->
-    <project remote="CosmicCoreX" name="device_xiaomi_violet" path="device/xiaomi/violet" revision="lineage-23.2" />
+    <project remote="CosmicCoreX" name="cosmic_device_xiaomi_violet" path="device/xiaomi/violet" revision="lineage-23.2" />
 
     <!-- Kernel -->
-    <project remote="ax-devices" name="android_kernel_xiaomi_violet" path="kernel/xiaomi/violet" revision="lineage-23.2" />
+    <project remote="selfmusin" name="android_kernel_xiaomi_violet" path="kernel/xiaomi/violet" revision="sixteen" />
 
     <!-- Vendor -->
-    <project remote="ax-devices" name="android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" />
+    <project remote="joker" name="vendor_xiaomi_violet" path="vendor/xiaomi/violet" />
 
     <!-- Hardware -->
     <project remote="lineage" name="android_hardware_xiaomi" path="hardware/xiaomi" />
