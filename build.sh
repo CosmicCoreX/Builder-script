@@ -31,7 +31,7 @@ set +o allexport
 
 ### ================= CONFIG =================
 
-ROM_NAME="Xdroid"
+ROM_NAME="Lunaris"
 DEVICE="violet"
 BUILD_TYPE="user"
 USER="@IamZeus14"
@@ -54,7 +54,7 @@ function clean() {
 }
 
 function sync_sources() {
-  repo init -u https://github.com/xdroid-oss/xd_manifest -b thirteen --depth=1
+  repo init -u https://github.com/Lunaris-AOSP/android -b 16.2 --git-lfs --depth=1
   git clone https://github.com/CosmicCoreX/Builder-script.git -b main .repo/local_manifests
 
   if [ -f /opt/crave/resync.sh ]; then
@@ -71,8 +71,8 @@ function setup_env() {
   export BUILD_HOSTNAME=crave
 
   . build/envsetup.sh
-  lunch xdroid_"$DEVICE"-bp4a-"$BUILD_TYPE"
-  make xd -j$(nproc --all)
+  lunch lineage_"$DEVICE"-bp4a-"$BUILD_TYPE"
+  mka installclean
 }
 
 function build_rom() {
