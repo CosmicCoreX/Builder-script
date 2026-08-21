@@ -7,13 +7,17 @@
     <remote name="joker" fetch="https://github.com/Joker-V2" revision="lineage-23.2" />
     <remote name="CosmicCoreX" fetch="https://github.com/CosmicCoreX" revision="lineage-23.2" />
     <remote name="ax-devices" fetch="https://github.com/AxionAOSP-devices" revision="lineage-23.2" />
-
+    <remote name="Nipin NA" fetch="https://gitlab.com/Joker-V2" revision="sixteen" />
+    
     <!-- Device -->
     <project remote="CosmicCoreX" name="android_device_xiaomi_violet" path="device/xiaomi/violet" revision="lineage-23.2" />
 
     <!-- Kernel -->
     <project remote="CosmicCoreX" name="kernel_xiaomi_violet" path="kernel/xiaomi/violet" revision="lineage-23.2" />
 
+    <!-- miui cam -->
+    <project remote="Nipin NA" name="android_vendor_MiuiCamera" path="vendor/MiuiCamera" revision="sixteen" />
+    
     <!-- Vendor -->
     <project remote="ax-devices" name="android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" revision="lineage-23.2" />
 
