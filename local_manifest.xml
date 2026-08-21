@@ -6,18 +6,18 @@
     <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-23.2" />
     <remote name="joker" fetch="https://github.com/Joker-V2" revision="lineage-23.2" />
     <remote name="CosmicCoreX" fetch="https://github.com/CosmicCoreX" revision="lineage-23.2" />
-    <remote name="SuperiorOS" fetch="https://github.com/SuperiorOS-Devices" revision="lineage-23.2" />
+    <remote name="ax-devices" fetch="https://github.com/AxionAOSP-devices" revision="lineage-23.2" />
 
     <!-- Device -->
-    <project remote="CosmicCoreX" name="device_xiaomi_violet" path="device/xiaomi/violet" revision="16.2" />
+    <project remote="CosmicCoreX" name="android_device_xiaomi_violet" path="device/xiaomi/violet" revision="lineage-23.2" />
 
     <!-- Kernel -->
-    <project remote="CosmicCoreX" name="cosmic_kernel_violet" path="kernel/xiaomi/violet" revision="sixteen" />
+    <project remote="CosmicCoreX" name="kernel_xiaomi_violet" path="kernel/xiaomi/violet" revision="lineage-23.2" />
 
     <!-- Vendor -->
-    <project remote="SuperiorOS" name="vendor_xiaomi_violet" path="vendor/xiaomi/violet" revision="16.2" />
+    <project remote="ax-devices" name="android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" revision="lineage-23.2" />
 
     <!-- Hardware -->
-    <project remote="lineage" name="android_hardware_xiaomi" path="hardware/xiaomi" />
+    <project remote="lineage" name="android_hardware_xiaomi" path="hardware/xiaomi" revision="lineage-23.2" />
     <project remote="joker" name="android_hardware_dolby" path="hardware/dolby" revision="16.2" />
 </manifest>
