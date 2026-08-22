@@ -14,9 +14,6 @@
 
     <!-- Kernel -->
     <project remote="CosmicCoreX" name="kernel_xiaomi_violet" path="kernel/xiaomi/violet" revision="lineage-23.2" />
-
-    <!-- miui cam -->
-    <project remote="CosmicCoreX" name="android_vendor_MiuiCamera" path="vendor/MiuiCamera" revision="sixteen" />
     
     <!-- Vendor -->
     <project remote="ax-devices" name="android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" revision="lineage-23.2" />
