@@ -53,6 +53,7 @@ function clean() {
   rm -rf .repo/local_manifests
   rm -rf {device,kernel,hardware,vendor}/xiaomi
   rm -rf hardware/dolby
+  rm -rf vendor/MiuiCamera
   rm -rf vendor/lineage-priv/keys
 }
 
