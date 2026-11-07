@@ -3,24 +3,30 @@
 <!-- Device : Redmi Note 7 Pro (violet) -->
 <manifest>
     <!-- fetching sources -->
-    <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-23.2" />
-    <remote name="joker" fetch="https://github.com/Joker-V2" revision="lineage-23.2" />
-    <remote name="CosmicCoreX" fetch="https://github.com/CosmicCoreX" revision="lineage-23.2" />
+    <remote name="PixelOS-Devices" fetch="https://github.com/LineageOS" revision="lineage-23.2" />
+    <remote name="xiaomi-sm6150" fetch="https://github.com/xiaomi-sm6150" revision="lineage-23.2" />
+    <remote name="CosmicCoreX" fetch="https://github.com/CosmicCoreX" revision="seventeen" />
     <remote name="ax-devices" fetch="https://github.com/AxionAOSP-devices" revision="lineage-23.2" />
     
     <!-- Device -->
-    <project remote="CosmicCoreX" name="android_device_xiaomi_violet" path="device/xiaomi/violet" revision="lineage-23.2" />
+    <project remote="CosmicCoreX" name="device_xiaomi_violet" path="device/xiaomi/violet" revision="seventeen" />
+
+    <!-- Common Tree -->
+    <project remote="PixelOS-Devices" name="android_device_xiaomi_sm6150-common" path="device/xiaomi/sm6150-common" revision="seventeen" />
 
     <!-- Kernel -->
-    <project remote="CosmicCoreX" name="cosmic_kernel_violet" path="kernel/xiaomi/violet" revision="lineage-23.2" />
+    <project remote="PixelOS-Devices" name="android_kernel_xiaomi_sm6150" path="kernel/xiaomi/violet" revision="seventeen" />
     
     <!-- Vendor -->
-    <project remote="CosmicCoreX" name="android_vendor_xiaomi_violet" path="vendor/xiaomi/violet" revision="lineage-23.2" />
+    <project remote="NoPrincessHere" name="proprietary_vendor_xiaomi_violet" path="vendor/xiaomi/violet" revision="seventeen" />
+
+    <!-- Common Vendor -->
+    <project remote="NoPrincessHere" name="proprietary_vendor_xiaomi_6150-common" path="vendor/xiaomi/violet" revision="seventeen" />    
 
     <!-- Miui Camera -->
-    <project remote="CosmicCoreX" name="android_vendor_MiuiCamera" path="vendor/MiuiCamera" revision="lineage-23.2" />
+    <project remote="xiaomi-sm6150" name="android_vendor_MiuiCamera" path="vendor/miuicamera-violet" revision="seventeen" />
 
     <!-- Hardware -->
-    <project remote="lineage" name="android_hardware_xiaomi" path="hardware/xiaomi" revision="lineage-23.2" />
-    <project remote="joker" name="android_hardware_dolby" path="hardware/dolby" revision="16.2" />
+    <project remote="PixelOS-Devices" name="android_hardware_xiaomi" path="hardware/xiaomi" revision="seventeen" />
+    <project remote="NoPrincessHere" name="proprietary_vendor_oneplus_dolby" path="vendor/oneplus/dolby" revision="16.2" />
 </manifest>
